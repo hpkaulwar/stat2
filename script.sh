@@ -3,7 +3,7 @@
 var=$(git log --stat | grep "|" | awk '{print $3}')
 #echo $var
 arr=($var)
-val=10
+val=$1
 index=()
 commit_final=()
 change_final=()
