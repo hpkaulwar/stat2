@@ -1,4 +1,4 @@
-# stat2  Software tools and technologies course repository
+# Stat2  Software tools and technologies course repository
 - **Steps To follow to Use this Command Line Tool **
 1. Firstly Clone this repository to try out Commands.
 2. If 'K' is an integer then
@@ -9,3 +9,5 @@
 7. If you don't write any argument K = 10 will be taken by default
 - **Our assignment**
 - Write a command line tool in your favourite language to analyze the full log of a git repository and find out commits in which less than 10 lines changed among all the files. Show the working with possible use cases.
+We have made a tool named line by creating alias of the script.
+All the screenshots are included in the report.
