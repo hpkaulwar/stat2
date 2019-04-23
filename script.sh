@@ -3,7 +3,21 @@
 var=$(git log --stat | grep "|" | awk '{print $3}')
 #echo $var
 arr=($var)
+stuff=($1) 
+#echo $commit_changes
+len=${#stuff[@]} 
+#echo $len
+zero=0
 val=$1
+if [ $len -eq $zero ]
+then
+    val=10
+    echo Default
+fi
+
+echo Commit with less than $val line changes.
+echo "**************"
+
 index=()
 commit_final=()
 change_final=()
@@ -52,8 +66,8 @@ done
 for i in "${!index[@]}"; do
     #printf '${arr[%s]}=%s\n' "$i" "${arr[i]}"
     ind=${index[i]} 
-    echo ${commit_final[ind]}
-    echo ${change_final[ind]}
-    #echo "**************"
+    echo commit hash_val :${commit_final[ind]}
+    echo Lines changed  ${change_final[ind]} 
+    echo "**************"
     
 done
