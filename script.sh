@@ -16,7 +16,7 @@ then
 fi
 
 echo Commit with less than $val line changes.
-echo  "**************"
+echo   "**************"
 
 index=()
 commit_final=()
