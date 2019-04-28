@@ -15,6 +15,12 @@ then
     echo Default
 fi
 
+re='^[0-9]+$'
+
+if ! [[ $val =~ $re ]] ; then
+            echo "Please enter as command line argument an integer greater than 0."
+            exit
+fi
 echo Commit with less than $val line changes.
 echo   "**************"
 
